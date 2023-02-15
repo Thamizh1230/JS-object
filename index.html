@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <label for="name">User_Name</label>
+    <input type="text" name="name" id="name" placeholder="enter UserName"><br><br>
+    <label for="number">Mobile_number</label>
+    <input type="number" name="number" id="number" placeholder="enter MbleNumber"><br><br>
+    <button id="add">Add Data</button>
+
+
+    <script>
+
+        // let Mobile={
+        //    name:"Vivo",
+        //    model:"V22pro",
+        //    color:"Royalblue",
+        //    ram:"8gb"
+        // }
+
+     
+
+
+        let userName = document.getElementById("name"),
+        mobileNumber = document.getElementById("number"),
+        addData = document.getElementById("add");
+        let userData={}
+
+        addData.addEventListener("click", user);
+        function user(){
+
+            userData[userName.value] = mobileNumber.value;
+            console.log(userData)
+        }
+
+      
+
+    </script>
+    
+</body>
+</html>
